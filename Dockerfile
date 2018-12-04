@@ -10,7 +10,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     libcurl4-gnutls-dev \
     libpq-dev \
-    libicu-dev
+    libicu-dev \
+    zlib1g-dev
 
 
 RUN docker-php-ext-install \
@@ -18,7 +19,8 @@ RUN docker-php-ext-install \
     curl \
     bcmath \
     gettext \
-    mbstring
+    mbstring \
+    zip
 
 RUN pecl install xdebug && docker-php-ext-enable xdebug
 
