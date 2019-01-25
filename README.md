@@ -6,11 +6,11 @@
 ## Codesniffer
 
 ```bash
-docker run -v $PWD:/var/www/html temirkhan/code-checker vendor/bin/phpcs
+docker run --rm -v $PWD:/var/www/html temirkhan/code-checker vendor/bin/phpcs
 ```
 
 ## Phpunit
 
 ```bash
-docker run -v $PWD:/var/www/html temirkhan/code-checker vendor/bin/phpunit
+docker run --rm -v $PWD:/var/www/html temirkhan/code-checker vendor/bin/phpunit
 ```
